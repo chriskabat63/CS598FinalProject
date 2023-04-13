@@ -22,6 +22,9 @@ The goal of our reproducibility study is to confirm the claims made in the paper
 
 ## Methodology
 
+## Notebooks
+
+
 ## Parameter Tuning
 
 ## Results
@@ -29,7 +32,10 @@ The goal of our reproducibility study is to confirm the claims made in the paper
 ### Result 1 - Classification using Classic Machine Learning Models (TF-IDF)
 
 #### Original Results
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ensemble.gif?raw=true)
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-All.gif?raw=true)
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-Extra.gif?raw=true)
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-InfoGain.gif?raw=true)
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-SelectKBest.gif?raw=true)
 
 #### Our Results
 
@@ -38,7 +44,7 @@ The goal of our reproducibility study is to confirm the claims made in the paper
 ### Result 2 - Classification using Deep Learning Models (TF-IDF)
 
 #### Original Results
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ensemble.gif?raw=true)
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-WE-SWYes.gif?raw=true)
 
 #### Our Results
 
@@ -47,7 +53,7 @@ The goal of our reproducibility study is to confirm the claims made in the paper
 ### Result 3 - Classification using Classical Machine Learning Models (Embeddings)
 
 #### Original Results
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ensemble.gif?raw=true)
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-BagOfWords-ByFeatureSelection.gif?raw=true)
 
 #### Our Results
 
@@ -56,7 +62,7 @@ The goal of our reproducibility study is to confirm the claims made in the paper
 ### Result 4 - Classification using Deep Learning Models (Embeddings)
 
 #### Original Results
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ensemble.gif?raw=true)
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-WE-SWYes.gif?raw=true)
 
 #### Our Results
 
