@@ -47,9 +47,16 @@ The goal of our reproducibility study is to confirm the claims made in the paper
 ### Result 1 - Classification using Classic Machine Learning Models (TF-IDF)
 
 #### Original Results
+#### Performances of CML Classifiers With All Features Using TF-IDF Representations
 ![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-All.gif?raw=true)
+
+#### Performances of CML Classifiers With Feature Selection Algorithm ExtraTreesClassifier Using TF-IDF Representations
 ![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-Extra.gif?raw=true)
+
+#### Performances of CML Classifiers With Feature Selection Algorithm InfoGain Using TF-IDF Representations
 ![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-InfoGain.gif?raw=true)
+
+#### Performances of CML Classifiers With Feature Selection Algorithm SelectKBest Using TF-IDF Representations
 ![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-SelectKBest.gif?raw=true)
 
 #### Our Results
