@@ -2,4 +2,3 @@ obesity_data/*
 .vector_cache/*
 models/*
 .ipynb_checkpoints/*
-aoai/*
