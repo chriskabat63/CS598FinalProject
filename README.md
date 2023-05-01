@@ -22,6 +22,23 @@ The goal of our reproducibility study is to confirm the claims made in the paper
 
 ## Methodology
 
+In reproducing the research paper, we did not use any of the author's code as it was not provided in the paper. We aimed to follow the authors description of steps they took to get the results. The resources we used to reproduce this paper was the paper itself as well as some of the references from the paper. 
+The paper did not share information about the hyperparameters used or how the Deep Learning models were constructed (although we inferred they were using Keras instead of Pytorch based on the description of the models).  We used hyper parameter sweeps (described below) to get the results as close as possible.
+
+The following steps were taken to perform the study:
+
+- Data Preperation
+    - Downloaded the XML data from the N2C2 Obesity Challenge and converted it from XML
+    - Performed preprocessing steps such as Lemmatization, removal of punctuation, lower casing, removal of numbers, etc.
+    - Tokenized in a word or sentence format
+- Create Word Embeddings
+    - Break large documents into multiple documents
+    - Tokenize and pad the documents (words and sentences)
+    - Test the embedding process
+- Run classical machine learning models
+- Run deep machine learning models
+- Run ensemble models
+
 ## Notebooks
 
 The following notebook was used to prepare the dataset for use in the reproducability study:
@@ -29,6 +46,9 @@ The following notebook was used to prepare the dataset for use in the reproducab
 
 The following notebook was used to create the word/sentence embeddings based on the text of the clinical notes:
 [Create Embeddings](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Create%20Embeddings%20-%20156.ipynb)
+
+The following notebook was used to pull sentence embeddings using Microsoft's Azure OpenAI cognitive service:
+[Open AI](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20OpenAI%20-%20156.ipynb)
 
 The following notebook was used to execute all of the classical machine learning models:
 [Classical ML Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Classical%20ML%20Models%20-%20156.ipynb)
@@ -38,9 +58,6 @@ The following notebook was used to execute all of the deep learning machine lear
 
 The following notebook was used to execute the ensemble model we created as part of the study:
 [Ensemble Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Ensemble%20Models%20-%20156.ipynb)
-
-The following notebook was used to pull sentence embeddings using Microsoft's Azure OpenAI cognitive service:
-[Open AI](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20OpenAI%20-%20156.ipynb)
 
 The following notebook was used to rename our final models once selected to simplify the ensemble process:
 [Utilities](https://github.com/chriskabat63/CS598FinalProject/blob/main/Utilities.ipynb)
@@ -52,21 +69,36 @@ The following notebook was used to rename our final models once selected to simp
 ### Result 1 - Classification using Classic Machine Learning Models (TF-IDF)
 
 #### Original Results
-#### Performances of CML Classifiers With All Features Using TF-IDF Representations
+##### Performances of CML Classifiers With All Features Using TF-IDF Representations
 ![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-All.gif?raw=true)
 
-#### Performances of CML Classifiers With Feature Selection Algorithm ExtraTreesClassifier Using TF-IDF Representations
+##### Performances of CML Classifiers With Feature Selection Algorithm ExtraTreesClassifier Using TF-IDF Representations
 ![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-Extra.gif?raw=true)
 
-#### Performances of CML Classifiers With Feature Selection Algorithm InfoGain Using TF-IDF Representations
+##### Performances of CML Classifiers With Feature Selection Algorithm InfoGain Using TF-IDF Representations
 ![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-InfoGain.gif?raw=true)
 
-#### Performances of CML Classifiers With Feature Selection Algorithm SelectKBest Using TF-IDF Representations
+##### Performances of CML Classifiers With Feature Selection Algorithm SelectKBest Using TF-IDF Representations
 ![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-SelectKBest.gif?raw=true)
 
 #### Our Results
 
+##### Performances of CML Classifiers With All Features Using TF-IDF Representations
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-All-Results.gif?raw=true)
+
+##### Performances of CML Classifiers With Feature Selection Algorithm ExtraTreesClassifier Using TF-IDF Representations
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-Extra-Results.gif?raw=true)
+
+##### Performances of CML Classifiers With Feature Selection Algorithm InfoGain Using TF-IDF Representations
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-InfoGain-Results.gif?raw=true)
+
+##### Performances of CML Classifiers With Feature Selection Algorithm SelectKBest Using TF-IDF Representations
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-SelectKBest=Results.gif?raw=true)
+
+
 #### Notes
+
+**TBD**
 
 ### Result 2 - Classification using Deep Learning Models (TF-IDF)
 
@@ -74,8 +106,11 @@ The following notebook was used to rename our final models once selected to simp
 ![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-WE-SWYes.gif?raw=true)
 
 #### Our Results
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-WE-SWYes-Results.gif?raw=true)
 
 #### Notes
+
+**TBD**
 
 ### Result 3 - Classification using Classical Machine Learning Models (Embeddings)
 
@@ -84,7 +119,11 @@ The following notebook was used to rename our final models once selected to simp
 
 #### Our Results
 
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-BagOfWords-ByFeatureSelection-Results.gif?raw=true)
+
 #### Notes
+
+**TBD**
 
 ### Result 4 - Classification using Deep Learning Models (Embeddings)
 
@@ -92,8 +131,11 @@ The following notebook was used to rename our final models once selected to simp
 ![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-WE-SWYes.gif?raw=true)
 
 #### Our Results
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-WE-SWYes-Results.gif?raw=true)
 
 #### Notes
+
+**TBD**
 
 ### Result 5 - Classification using Ensemble Model
 
@@ -101,15 +143,20 @@ The following notebook was used to rename our final models once selected to simp
 ![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ensemble.gif?raw=true)
 
 #### Our Results
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ensemble-Result.gif?raw=true)
 
 #### Notes
+
+**TBD**
 
 ### Additional Result - Classification using Open AI (Embeddings)
 
 #### Our Results
+![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-WE-SWYes-Results.gif?raw=true)
 
 #### Notes
 
+The OpenAI embeddings were done in a couple different approaches.  The results shown above returned embeddings for sentence tokens.  It can be seen that the results are very similar to using the USE embeddings (which uses the same tokenizations).  We also ran embeddings for the entire document.  These results were very close to the sentence tokenized but required much less processing as the vectors were much smaller (i.e. one vector of 1536 length vs. # sentences *  1536).  We had the greatest success with the ADA v2 embeddings.  We also tried the Babbage V1 similarity embeddings, but it performance was worse. The Curie and Davinci models were cost prohibitive for this study.
 
 ## References
 Kumar, V., Recupero, D. R., Rbioni, D., & Helaoui, R. (2021). Ensembling Classical Machine Learning and Deep Learning Approaches for Morbidity Identification From Clinical Notes. IEEE Access, 9, 7197-7126. 10.1109/ACCESS.2020.3043221
