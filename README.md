@@ -42,24 +42,31 @@ The following steps were taken to perform the study:
 ## Notebooks
 
 The following notebook was used to prepare the dataset for use in the reproducability study:
+
 [Data Preperation](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Data%20Preparation%20-%20156.ipynb)
 
 The following notebook was used to create the word/sentence embeddings based on the text of the clinical notes:
+
 [Create Embeddings](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Create%20Embeddings%20-%20156.ipynb)
 
 The following notebook was used to pull sentence embeddings using Microsoft's Azure OpenAI cognitive service:
+
 [Open AI](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20OpenAI%20-%20156.ipynb)
 
 The following notebook was used to execute all of the classical machine learning models:
+
 [Classical ML Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Classical%20ML%20Models%20-%20156.ipynb)
 
 The following notebook was used to execute all of the deep learning machine learning models:
+
 [Deep Learning Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Deep%20Learning%20ML%20Models%20-%20156.ipynb)
 
 The following notebook was used to execute the ensemble model we created as part of the study:
+
 [Ensemble Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Ensemble%20Models%20-%20156.ipynb)
 
 The following notebook was used to rename our final models once selected to simplify the ensemble process:
+
 [Utilities](https://github.com/chriskabat63/CS598FinalProject/blob/main/Utilities.ipynb)
 
 ## Parameter Tuning
@@ -70,30 +77,30 @@ The following notebook was used to rename our final models once selected to simp
 
 #### Original Results
 ##### Performances of CML Classifiers With All Features Using TF-IDF Representations
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-All.gif?raw=true)
+![CML BagOfWords AllFeatures](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-All.gif?raw=true)
 
 ##### Performances of CML Classifiers With Feature Selection Algorithm ExtraTreesClassifier Using TF-IDF Representations
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-Extra.gif?raw=true)
+![CML BagOfWords ExtraTreesClassifier](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-Extra.gif?raw=true)
 
 ##### Performances of CML Classifiers With Feature Selection Algorithm InfoGain Using TF-IDF Representations
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-InfoGain.gif?raw=true)
+![CML BagOfWords InfoGain](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-InfoGain.gif?raw=true)
 
 ##### Performances of CML Classifiers With Feature Selection Algorithm SelectKBest Using TF-IDF Representations
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-SelectKBest.gif?raw=true)
+![CML BagOfWords SelectKBest](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-SelectKBest.gif?raw=true)
 
 #### Our Results
 
 ##### Performances of CML Classifiers With All Features Using TF-IDF Representations
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-All-Results.gif?raw=true)
+![CML BagOfWords AllFeatures Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-All-Results.png?raw=true)
 
 ##### Performances of CML Classifiers With Feature Selection Algorithm ExtraTreesClassifier Using TF-IDF Representations
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-Extra-Results.gif?raw=true)
+![CML BagOfWords ExtraTreesClassifier Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-Extra-Results.png?raw=true)
 
 ##### Performances of CML Classifiers With Feature Selection Algorithm InfoGain Using TF-IDF Representations
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-InfoGain-Results.gif?raw=true)
+![CML BagOfWords InfoGain Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-InfoGain-Results.png?raw=true)
 
 ##### Performances of CML Classifiers With Feature Selection Algorithm SelectKBest Using TF-IDF Representations
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-SelectKBest=Results.gif?raw=true)
+![CML BagOfWords SelectKBest Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-SelectKBest-Results.png?raw=true)
 
 
 #### Notes
@@ -103,10 +110,10 @@ The following notebook was used to rename our final models once selected to simp
 ### Result 2 - Classification using Deep Learning Models (TF-IDF)
 
 #### Original Results
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-WE-SWYes.gif?raw=true)
+![DL BagOfWords](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-WE-SWYes.gif?raw=true)
 
 #### Our Results
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-WE-SWYes-Results.gif?raw=true)
+![DL BagOfWords Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-WE-SWYes-Results.png?raw=true)
 
 #### Notes
 
@@ -115,11 +122,11 @@ The following notebook was used to rename our final models once selected to simp
 ### Result 3 - Classification using Classical Machine Learning Models (Embeddings)
 
 #### Original Results
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-BagOfWords-ByFeatureSelection.gif?raw=true)
+![CML Embeddings](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-BagOfWords-ByFeatureSelection.gif?raw=true)
 
 #### Our Results
 
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-BagOfWords-ByFeatureSelection-Results.gif?raw=true)
+![CML Embeddings Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-BagOfWords-ByFeatureSelection-Results.png?raw=true)
 
 #### Notes
 
@@ -128,10 +135,10 @@ The following notebook was used to rename our final models once selected to simp
 ### Result 4 - Classification using Deep Learning Models (Embeddings)
 
 #### Original Results
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-WE-SWYes.gif?raw=true)
+![DL Embeddings AllFeatures](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-WE-SWYes.gif?raw=true)
 
 #### Our Results
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-WE-SWYes-Results.gif?raw=true)
+![DL Embeddings Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-WE-SWYes-Results.png?raw=true)
 
 #### Notes
 
@@ -140,10 +147,10 @@ The following notebook was used to rename our final models once selected to simp
 ### Result 5 - Classification using Ensemble Model
 
 #### Original Results
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ensemble.gif?raw=true)
+![Ensemble](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ensemble.gif?raw=true)
 
 #### Our Results
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ensemble-Result.gif?raw=true)
+![Ensemble Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ensemble-Result.png?raw=true)
 
 #### Notes
 
@@ -152,7 +159,7 @@ The following notebook was used to rename our final models once selected to simp
 ### Additional Result - Classification using Open AI (Embeddings)
 
 #### Our Results
-![DL BagOfWords AllFeatures Averaged](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-WE-SWYes-Results.gif?raw=true)
+![DL Embeddings OpenAI Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-WE-SWYes-Results.png?raw=true)
 
 #### Notes
 
