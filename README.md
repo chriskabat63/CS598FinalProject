@@ -110,10 +110,10 @@ The following notebook was used to rename our final models once selected to simp
 ### Result 2 - Classification using Deep Learning Models (TF-IDF)
 
 #### Original Results
-![DL BagOfWords](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-WE-SWYes.gif?raw=true)
+![DL BagOfWords](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-BagOfWords-ByFeatureSelection.gif?raw=true)
 
 #### Our Results
-![DL BagOfWords Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-WE-SWYes-Results.png?raw=true)
+![DL BagOfWords Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-BagOfWords-ByFeatureSelection-Results.png?raw=true)
 
 #### Notes
 
@@ -122,11 +122,11 @@ The following notebook was used to rename our final models once selected to simp
 ### Result 3 - Classification using Classical Machine Learning Models (Embeddings)
 
 #### Original Results
-![CML Embeddings](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-BagOfWords-ByFeatureSelection.gif?raw=true)
+![CML Embeddings](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-WE-SWYes.gif?raw=true)
 
 #### Our Results
 
-![CML Embeddings Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-BagOfWords-ByFeatureSelection-Results.png?raw=true)
+![CML Embeddings Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-WE-SWYes-Results.png?raw=true)
 
 #### Notes
 
