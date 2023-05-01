@@ -24,21 +24,26 @@ The goal of our reproducibility study is to confirm the claims made in the paper
 
 ## Notebooks
 
+The following notebook was used to prepare the dataset for use in the reproducability study:
 [Data Preperation](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Data%20Preparation%20-%20156.ipynb)
 
-
-[Classical ML Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Classical%20ML%20Models%20-%20156.ipynb)
-
-
+The following notebook was used to create the word/sentence embeddings based on the text of the clinical notes:
 [Create Embeddings](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Create%20Embeddings%20-%20156.ipynb)
 
+The following notebook was used to execute all of the classical machine learning models:
+[Classical ML Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Classical%20ML%20Models%20-%20156.ipynb)
 
+The following notebook was used to execute all of the deep learning machine learning models:
 [Deep Learning Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Deep%20Learning%20ML%20Models%20-%20156.ipynb)
 
-
+The following notebook was used to execute the ensemble model we created as part of the study:
 [Ensemble Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20Ensemble%20Models%20-%20156.ipynb)
 
+The following notebook was used to pull sentence embeddings using Microsoft's Azure OpenAI cognitive service:
+[Open AI](https://github.com/chriskabat63/CS598FinalProject/blob/main/Project%20Workbook%20OpenAI%20-%20156.ipynb)
 
+The following notebook was used to rename our final models once selected to simplify the ensemble process:
+[Utilities](https://github.com/chriskabat63/CS598FinalProject/blob/main/Utilities.ipynb)
 
 ## Parameter Tuning
 
