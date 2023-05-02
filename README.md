@@ -71,6 +71,42 @@ The following notebook was used to rename our final models once selected to simp
 
 ## Parameter Tuning
 
+Because of the flexibility of the deep learning models we had a number of parameters we could change that could effect the results of the model.  We performed hyperparameter sweeps for a single morbidity condition by varying the following parameters:
+
+- Epoch
+- Batch Size
+- Hidden State
+- Drop Out
+- Learning Rate
+
+### DL Model for TF-IDF/Asthma
+
+Here is a graphical representation of the effects of the parameters on the F1-MICRO scores:
+![HP TFIDF](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/HP-TFIDF.png?raw=true)
+
+As a result we selected these parameters:
+
+Feature | Batch Size | Dropout | Hidden State | Learning Rate | Epochs
+---|---|---|---|---|---
+All | 32 | 0.1 | 64 | 0.001 | 20
+InfoGain | 32 | 0.1 | 64 | 0.01 | 40
+ExtraTreesClassifier | 32 | 0.01 | 64 | .01 | 60
+SelectKBest | 32 | 0.1 | 64 | 0.01 | 40
+
+### DL Model for Embedding/Asthma
+
+Here is a graphical representation of the effects of the parameters on the F1-MICRO scores:
+![HP TFIDF](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/HP-TFIDF.png?raw=true)
+
+As a result we selected these parameters:
+
+Feature | Batch Size | Dropout | Hidden State | Learning Rate | Epochs
+---|---|---|---|---|---
+AOAI | 32 | 0.1 | 128 | 0.01 | 50
+USE | 32 | 0.1 | 128 | 0.01 | 50
+GloVe | 32 | 0.1 | 128 | 0.01 | 25
+FastText | 32 | 0.1 | 128 | 0.001 | 25
+
 ## Results
 
 ### Result 1 - Classification using Classic Machine Learning Models (TF-IDF)
@@ -164,6 +200,10 @@ The following notebook was used to rename our final models once selected to simp
 #### Notes
 
 The OpenAI embeddings were done in a couple different approaches.  The results shown above returned embeddings for sentence tokens.  It can be seen that the results are very similar to using the USE embeddings (which uses the same tokenizations).  We also ran embeddings for the entire document.  These results were very close to the sentence tokenized but required much less processing as the vectors were much smaller (i.e. one vector of 1536 length vs. # sentences *  1536).  We had the greatest success with the ADA v2 embeddings.  We also tried the Babbage V1 similarity embeddings, but it performance was worse. The Curie and Davinci models were cost prohibitive for this study.
+
+## Computational Results
+
+
 
 ## References
 Kumar, V., Recupero, D. R., Rbioni, D., & Helaoui, R. (2021). Ensembling Classical Machine Learning and Deep Learning Approaches for Morbidity Identification From Clinical Notes. IEEE Access, 9, 7197-7126. 10.1109/ACCESS.2020.3043221
