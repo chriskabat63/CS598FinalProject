@@ -206,7 +206,7 @@ FastText | 32 | 0.1 | 128 | 0.001 | 25
 
 #### Notes
 
-The OpenAI embeddings were done in a couple different approaches.  The results shown above returned embeddings for sentence tokens.  It can be seen that the results are very similar to using the USE embeddings (which uses the same tokenizations).  We also ran embeddings for the entire document.  These results were very close to the sentence tokenized but required much less processing as the vectors were much smaller (i.e. one vector of 1536 length vs. # sentences *  1536).  We had the greatest success with the ADA v2 embeddings.  We also tried the Babbage V1 similarity embeddings, but it performance was worse. The Curie and Davinci models were cost prohibitive for this study.
+The OpenAI embeddings were done using a couple different approaches.  The results shown above used embeddings for each sentence.  It can be seen that the results are very similar to using the USE embeddings (which uses the same sentence tokenizations).  We also ran a single embedding for the entire document.  These results were very close (within 2%) to the sentence tokenized and required much less processing as the vectors were much smaller (i.e. one vector of 1536 length vs. # sentences *  1536).  We had the greatest success with the ADA v2 embeddings and sentence tokens.  We also tried the Babbage V1 similarity embeddings, but its performance was worse. The Curie and Davinci models were cost prohibitive for this study.
 
 ## Computational Results
 
