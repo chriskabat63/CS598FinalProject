@@ -35,9 +35,16 @@ The following steps were taken to perform the study:
     - Break large documents into multiple documents
     - Tokenize and pad the documents (words and sentences)
     - Test the embedding process
+- Create OpenAI Embeddings
+    - Call Open AI service and store embedding vectors for usage
 - Run classical machine learning models
+    - Run TF-IDF with feature selection
+    - Run Embeddings
 - Run deep machine learning models
+    - Run TF-IDF with feature selection (BiLSTM)
+    - Run Embeddings (BiLSTM)
 - Run ensemble models
+    - Run single ensemble model using the most effective CML and DL models
 
 ## Notebooks
 
@@ -203,6 +210,15 @@ The OpenAI embeddings were done in a couple different approaches.  The results s
 
 ## Computational Results
 
+The classical models were run on a **TBD**
+
+The deep learning models were run on a Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz (6 core/12 threads) with 16 GB of RAM and a NVIDA GeForce GTX 1660 GPU.
+
+The following is a comparison of the model run time by type of model (DL Embeddings using GPU):
+![Runtime All Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/runtimeall.png?raw=true)
+
+The following is a comparison of the DL Embedding models using CPU and GPU:
+![Runtime All Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/runtimecpugpu.png?raw=true)
 
 
 ## References
