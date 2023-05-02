@@ -96,7 +96,7 @@ SelectKBest | 32 | 0.1 | 64 | 0.01 | 40
 ### DL Model for Embedding/Asthma
 
 Here is a graphical representation of the effects of the parameters on the F1-MICRO scores:
-![HP TFIDF](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/HP-TFIDF.png?raw=true)
+![HP TFIDF](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/HP-DL.png?raw=true)
 
 As a result we selected these parameters:
 
