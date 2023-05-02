@@ -90,7 +90,7 @@ Feature | Batch Size | Dropout | Hidden State | Learning Rate | Epochs
 ---|---|---|---|---|---
 All | 32 | 0.1 | 64 | 0.001 | 20
 InfoGain | 32 | 0.1 | 64 | 0.01 | 40
-ExtraTreesClassifier | 32 | 0.01 | 64 | .01 | 60
+ExtraTreesClassifier | 32 | 0.1 | 64 | 0.01 | 60
 SelectKBest | 32 | 0.1 | 64 | 0.01 | 40
 
 ### DL Model for Embedding/Asthma
