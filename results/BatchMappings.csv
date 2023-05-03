@@ -1,0 +1,6 @@
+﻿Batch,,
+DL_er_All_CUDA_2023-05-01-08-55-24,Embedding - GPU,GPU
+DL_er_AOAIFullTest_2023-04-26-15-46-16,Embedding - CPU,CPU
+DL_er_EmbeddingTestAll_2023-04-23-17-10-48,Embedding - CPU,CPU
+DL_tfidf_All_2023-04-26-19-44-24,Bag of Words - CPU,CPU
+DL_tfidf_All_2023-04-30-22-57-39,Bag of Words - GPU,GPU

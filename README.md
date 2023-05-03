@@ -214,11 +214,15 @@ The classical models were run on a **TBD**
 
 The deep learning models were run on a Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz (6 core/12 threads) with 16 GB of RAM and a NVIDA GeForce GTX 1660 GPU.
 
-The following is a comparison of the model run time by type of model (DL Embeddings using GPU):
-![Runtime All Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/runtimeall.png?raw=true)
+The following is a comparison of the CML Models for Bag of Words and Embedding Models:
+![Runtime All Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ComputeCML.png?raw=true)
 
-The following is a comparison of the DL Embedding models using CPU and GPU:
-![Runtime All Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/runtimecpugpu.png?raw=true)
+The following is a comparison of the DL Models for Bag of Words and Embedding Models:
+![Runtime All Models](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ComputeDL.png?raw=true)
+
+The following is a comparison of the DL Embedding models using CPU and GPU in both table and graphical representation:
+![Runtime GPUCPU Models Table](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ComputeCPUGPUTable.png?raw=true)
+![Runtime GPUCPU Models Graph](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ComputeCPUGPUGraph.png?raw=true)
 
 
 ## References
