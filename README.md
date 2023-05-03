@@ -16,7 +16,7 @@ Presentation link: TBD
 The paper we have chosen for the reproducibility project is:
 Ensembling Classical Machine Learning and Deep Learning Approaches for Morbidity Identification from Clinical Notes (Kumar, V., Recupero, D. R., Rbioni, D., & Helaoui, R., 2021, 7197-7126)
 
-The main goal of the paper is to extract co-morbidity recognition from clinical notes.  The idea was to use a combination of classical (CML) and deep learning methods(DML) to determine the best approach for classifying these notes in one or more of 16 morbidity conditions.  These models used a combination of NLP techniques including embeddings and bag of words implementations to provide input into the models.  It also measured the effect of including and removing stop words.  Lastly, it used ensemble techniques to tie together a number of the classical and deep learning models to provide the most accurate results.
+The main goal of the paper is to extract co-morbidity recognition from clinical notes.  The idea was to use a combination of classical (CML) and deep learning methods (DML) to determine the best approach for classifying these notes in one or more of 16 morbidity conditions.  These models used a combination of NLP techniques including embeddings and bag of words implementations to provide input into the models.  It also measured the effect of including and removing stop words.  Lastly, it used ensemble techniques to tie together a number of the classical and deep learning models to provide the most accurate results.
 
 The goal of our reproducibility study is to confirm the claims made in the paper as well as show how some additional techniques can be used to improve results.
 
@@ -28,7 +28,7 @@ The paper did not share information about the hyperparameters used or how the De
 The following steps were taken to perform the study:
 
 - Data Preperation
-    - Downloaded the XML data from the N2C2 Obesity Challenge and converted it from XML
+    - Downloaded the XML data from the N2C2 Obesity Challenge (N2c2, n.d.) and converted it from XML into dataframes.
     - Performed preprocessing steps such as Lemmatization, removal of punctuation, lower casing, removal of numbers, etc.
     - Tokenized in a word or sentence format
 - Create Word Embeddings
@@ -206,7 +206,7 @@ FastText | 32 | 0.1 | 128 | 0.001 | 25
 
 #### Notes
 
-The OpenAI embeddings were done using a couple different approaches.  The results shown above used embeddings for each sentence.  It can be seen that the results are very similar to using the USE embeddings (which uses the same sentence tokenizations).  We also ran a single embedding for the entire document.  These results were very close (within 2%) to the sentence tokenized and required much less processing as the vectors were much smaller (i.e. one vector of 1536 length vs. # sentences *  1536).  We had the greatest success with the ADA v2 embeddings and sentence tokens.  We also tried the Babbage V1 similarity embeddings, but its performance was worse. The Curie and Davinci models were cost prohibitive for this study.
+The OpenAI embeddings were done using a couple different approaches.  The results shown above used embeddings for each sentence.  It can be seen that the results are very similar to using the USE embeddings (which uses the same sentence tokenizations).  We also ran a single embedding for the entire document.  These results were very close (within ~2%) to the sentence tokenized and required much less processing as the vectors were much smaller (i.e. one vector of 1536 length vs. # sentences *  1536).  We had the greatest success with the ADA v2 embeddings and sentence tokens.  We also tried the Babbage V1 similarity embeddings, but its performance was worse. The Curie and Davinci models were cost prohibitive for this study.
 
 ## Computational Results
 
@@ -227,3 +227,5 @@ The following is a comparison of the DL Embedding models using CPU and GPU in bo
 
 ## References
 Kumar, V., Recupero, D. R., Rbioni, D., & Helaoui, R. (2021). Ensembling Classical Machine Learning and Deep Learning Approaches for Morbidity Identification From Clinical Notes. IEEE Access, 9, 7197-7126. 10.1109/ACCESS.2020.3043221
+
+NLP Research Data Sets. (n.d.). DBMI Portal. Retrieved April 12, 2023, from https://portal.dbmi.hms.harvard.edu/
