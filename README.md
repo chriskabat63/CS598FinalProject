@@ -28,7 +28,7 @@ The paper did not share information about the hyperparameters used or how the De
 The following steps were taken to perform the study:
 
 - Data Preperation
-    - Downloaded the XML data from the N2C2 Obesity Challenge (N2c2, n.d.) and converted it from XML into dataframes.
+    - Downloaded the XML data from the N2C2 Obesity Challenge (n2c2, n.d.) and converted it from XML into dataframes.
     - Performed preprocessing steps such as Lemmatization, removal of punctuation, lower casing, removal of numbers, etc.
     - Tokenized in a word or sentence format
 - Create Word Embeddings
@@ -238,4 +238,4 @@ The following is a comparison of the DL Embedding models using CPU and GPU in bo
 ## References
 Kumar, V., Recupero, D. R., Rbioni, D., & Helaoui, R. (2021). Ensembling Classical Machine Learning and Deep Learning Approaches for Morbidity Identification From Clinical Notes. IEEE Access, 9, 7197-7126. 10.1109/ACCESS.2020.3043221
 
-NLP Research Data Sets. (n.d.). DBMI Portal. Retrieved April 12, 2023, from https://portal.dbmi.hms.harvard.edu/
+n2c2 NLP Research Data Sets. (n.d.). DBMI Portal. Retrieved April 12, 2023, from https://portal.dbmi.hms.harvard.edu/
