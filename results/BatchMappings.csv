@@ -4,3 +4,4 @@ DL_er_AOAIFullTest_2023-04-26-15-46-16,Embedding - CPU,CPU
 DL_er_EmbeddingTestAll_2023-04-23-17-10-48,Embedding - CPU,CPU
 DL_tfidf_All_2023-04-26-19-44-24,Bag of Words - CPU,CPU
 DL_tfidf_All_2023-04-30-22-57-39,Bag of Words - GPU,GPU
+DL_er_AOAI_All_2023-04-27-22-44-48,Embedding - CPU,CPU

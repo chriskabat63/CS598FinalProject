@@ -207,7 +207,7 @@ Note:  After many iterations of parameter sweeps, we made a couple generalizatio
 
 #### Notes
 
-**TBD**
+This model was created using the ***TBD***
 
 ### Additional Result - Classification using Open AI (Embeddings)
 
@@ -235,6 +235,8 @@ The following is a comparison of the DL Embedding models using CPU and GPU in bo
 ![Runtime GPUCPU Models Table](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ComputeCPUGPUTable.png?raw=true)
 
 ![Runtime GPUCPU Models Graph](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ComputeCPUGPUGraph.png?raw=true)
+
+As it can be seen, the Deep Learning models performed much better on GPUs.  Also, the FastText and GloVe were able to leverage the nn.Embeddings object as they were able to be word vectorized which made a very big difference.
 
 
 ## References
