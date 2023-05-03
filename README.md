@@ -100,6 +100,11 @@ InfoGain | 32 | 0.1 | 64 | 0.01 | 40
 ExtraTreesClassifier | 32 | 0.1 | 64 | 0.01 | 60
 SelectKBest | 32 | 0.1 | 64 | 0.01 | 40
 
+Note:  After many iterations of parameter sweeps, we made a couple generalizations that helped us get to our parameters:
+
+* Processing with all features did best with a fewer number of epochs and lower learning rate
+* ExtraTreesClassifier for feature selection benefited from more epochs
+
 ### DL Model for Embedding/Asthma
 
 Here is a graphical representation of the effects of the parameters on the F1-MICRO scores:
@@ -113,6 +118,11 @@ AOAI | 32 | 0.1 | 128 | 0.01 | 50
 USE | 32 | 0.1 | 128 | 0.01 | 50
 GloVe | 32 | 0.1 | 128 | 0.01 | 25
 FastText | 32 | 0.1 | 128 | 0.001 | 25
+
+Note:  After many iterations of parameter sweeps, we made a couple generalizations that helped us get to our parameters:
+
+* Sentence tokenized embeddings did better with more epochs
+* FastText seemed to always perform better with a lower learning rate
 
 ## Results
 
