@@ -220,7 +220,7 @@ The OpenAI embeddings were done using a couple different approaches.  The result
 
 ## Computational Results
 
-The classical models were run on a **TBD**
+The classical models were run on a Intel(R) Core(TM) i7-12700KF processor with 32 GB RAM and an NVIDIA GeForce RTX 3080 GPU.
 
 The deep learning models were run on a Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz (6 core/12 threads) with 16 GB of RAM and a NVIDA GeForce GTX 1660 GPU.
 
