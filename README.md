@@ -155,11 +155,6 @@ Note:  After many iterations of parameter sweeps, we made a couple generalizatio
 ##### Performances of CML Classifiers With Feature Selection Algorithm SelectKBest Using TF-IDF Representations
 ![CML BagOfWords SelectKBest Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-TFIDF-SelectKBest-Results.png?raw=true)
 
-
-#### Notes
-
-**TBD**
-
 ### Result 2 - Classification using Deep Learning Models (TF-IDF)
 
 #### Original Results
@@ -167,10 +162,6 @@ Note:  After many iterations of parameter sweeps, we made a couple generalizatio
 
 #### Our Results
 ![DL BagOfWords Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-BagOfWords-ByFeatureSelection-Results.png?raw=true)
-
-#### Notes
-
-**TBD**
 
 ### Result 3 - Classification using Classical Machine Learning Models (Embeddings)
 
@@ -181,9 +172,6 @@ Note:  After many iterations of parameter sweeps, we made a couple generalizatio
 
 ![CML Embeddings Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/CML-WE-SWYes-Results.png?raw=true)
 
-#### Notes
-
-**TBD**
 
 ### Result 4 - Classification using Deep Learning Models (Embeddings)
 
@@ -193,9 +181,6 @@ Note:  After many iterations of parameter sweeps, we made a couple generalizatio
 #### Our Results
 ![DL Embeddings Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/DL-WE-SWYes-Results.png?raw=true)
 
-#### Notes
-
-**TBD**
 
 ### Result 5 - Classification using Ensemble Model
 
@@ -204,10 +189,6 @@ Note:  After many iterations of parameter sweeps, we made a couple generalizatio
 
 #### Our Results
 ![Ensemble Results](https://github.com/chriskabat63/CS598FinalProject/blob/main/images/ensemble-Result.png?raw=true)
-
-#### Notes
-
-This model was created using the ***TBD***
 
 ### Additional Result - Classification using Open AI (Embeddings)
 
