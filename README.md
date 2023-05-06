@@ -25,7 +25,7 @@ The goal of our reproducibility study is to confirm the claims made in the paper
 In reproducing the research paper, we did not use any of the author's code as it was not provided in the paper. We aimed to follow the authors description of steps they took to get the results. The resources we used to reproduce this paper was the paper itself as well as some of the references from the paper. 
 The paper did not share information about the hyperparameters used or how the Deep Learning models were constructed (although we inferred they were using Keras instead of Pytorch based on the description of the models).  We used hyper parameter sweeps (described below) to get the results as close as possible.
 
-Data download instructions:
+### Data download instructions:
 
 XML data was downloaded from the N2C2 Obesity Challenge (n2c2, n.d.) at https://portal.dbmi.hms.harvard.edu/.
 Because this data has health information data, you must register for access which requires approval.  We are not able to share the data in the GitHub site as the terms of the registration prohibited us sharing the data.
